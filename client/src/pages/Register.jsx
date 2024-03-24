@@ -73,6 +73,7 @@ const Register = () => {
               <TextInput
                 name='firstName'
                 label='First Name'
+                id = 'firstname'
                 placeholder='First Name'
                 type='text'
                 styles='w-full'
@@ -86,6 +87,7 @@ const Register = () => {
                 label='Last Name'
                 placeholder='Last Name'
                 type='lastName'
+                id = 'lastname'
                 styles='w-full'
                 register={register("lastName", {
                   required: "Last Name do no match",
@@ -99,6 +101,7 @@ const Register = () => {
               label='Email Address'
               placeholder='email@example.com'
               type='email'
+              id = 'email'
               register={register("email", {
                 required: "Email Address is required!",
               })}
@@ -112,6 +115,7 @@ const Register = () => {
                 label='Password'
                 placeholder='Password'
                 type='password'
+                id = 'password'
                 styles='w-full'
                 register={register("password", {
                   required: "Password is required!",
@@ -123,6 +127,7 @@ const Register = () => {
                 label='Confirm Password'
                 placeholder='Password'
                 type='password'
+                id = 'cPassword'
                 styles='w-full'
                 register={register("cPassword", {
                   validate: (value) => {
@@ -159,6 +164,7 @@ const Register = () => {
             ) : (
               <CustomButton
                 type='submit'
+                id='submit'
                 containerStyles={`inline-flex justify-center rounded-md bg-blue px-8 py-3 text-sm font-medium text-white outline-none mt-5 2xl:mt-8`}
                 title='Create Account'
               />
@@ -170,6 +176,7 @@ const Register = () => {
             <Link
               to='/login'
               className='text-[#065ad8] font-semibold ml-2 cursor-pointer'
+              id="login"
             >
               Login
             </Link>
